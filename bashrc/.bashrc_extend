@@ -1,0 +1,10 @@
+# some extended configure
+
+# -- fzf
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+# -- autojump
+source /usr/share/autojump/autojump.sh
+
+# -- cargo
+. "$HOME/.cargo/env"

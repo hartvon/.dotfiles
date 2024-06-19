@@ -1,0 +1,9 @@
+[user]
+	email = fhtzvl@gmail.com
+	name = hartvon
+[credential]
+	helper = store
+[core]
+	editor = vim
+[alias]
+    st = status
