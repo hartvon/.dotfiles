@@ -29,8 +29,3 @@ alias gcotb='git checkout --track -b'
 alias glog='git log'
 alias glogp='git log --pretty=format:"%h %s" --graph'
 
-# -- source script
-if [ -f ~/.alias_extend ]; then
-    . ~/.alias_extend
-fi
-
