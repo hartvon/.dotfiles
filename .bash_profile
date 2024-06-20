@@ -1,4 +1,11 @@
-eval "$(/opt/homebrew/bin/brew shellenv)"
+# Mac OS specific operation
+if [[ "$(uname)" == "Drwin" ]]; then
+  eval "$(/opt/homebrew/bin/brew shellenv)"
+
+  if [ -f /opt/homebrew/etc/bash_completion ]; then
+    . /opt/homebrew/etc/bash_completion
+  fi
+fi
 
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
@@ -11,19 +18,13 @@ if ! shopt -oq posix; then
   fi
 fi
 
-if [ -f /opt/homebrew/etc/bash_completion ]; then
-  . /opt/homebrew/etc/bash_completion
-fi
+for file in ~/.{bash_prompt,exports,bash_aliases,extra}; do
+  [ -r "$file" ] && [ -f "$file" ] && source "$file";
+done;
 
-if [ -f ~/.export ]; then
-    . ~/.export
-fi
+for file in ~/.bin/.[^.]*; do
+  source "$file"
+done
 
-if [ -f ~/.bashrc ]; then
-    . ~/.bashrc
-fi
-
-if [ -f ~/.bash_aliases ]; then
-    . ~/.bash_aliases
-fi
+unset file
 

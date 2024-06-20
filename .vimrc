@@ -1,5 +1,6 @@
 call plug#begin()
 Plug 'tpope/vim-sensible'
+Plug 'LunarWatcher/auto-pairs'
 call plug#end()
 
 set undofile
