@@ -1,0 +1,15 @@
+export VISUAL=vim
+export EDITOR=vim
+
+export GEM_HOME="$HOME/gems"
+export NEMU_HOME=/home/htvon/os/pa/ics2023/nemu
+export AM_HOME=/home/htvon/os/courses/os-workbench/abstract-machine
+export TLIB_PATH=/home/htvon/os/courses/concurrency/thread-lib
+export i686_BIN=/opt/i686-elf-tools-linux/bin
+export GOBIN=/usr/local/go/bin
+
+export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_proxy=socks5://127.0.0.1:7890
+export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01' # colored GCC warnings and errors
+
+export PATH="/usr/local/ssl/bin:$i686_BIN:$PATH:$HOME/gems/bin:/usr/local/musl/bin:$GOBIN"
+

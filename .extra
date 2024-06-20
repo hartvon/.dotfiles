@@ -1,0 +1,7 @@
+
+# extra config
+for file in ~/.{fzf.bash,cargo/env}; do
+  [ -r "$file" ] && [ -f "$file" ] && source "$file";
+done;
+unset file;
+
