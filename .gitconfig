@@ -5,5 +5,4 @@
 	helper = store
 [core]
 	editor = vim
-[alias]
-    st = status
+
