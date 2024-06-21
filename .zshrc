@@ -12,3 +12,7 @@ HISTFILE=~/.zsh_history
 autoload -Uz compinit
 compinit
 
+for file in ~/.{prompt,exports,aliases,extra}; do
+  [ -r "$file" ] && [ -f "$file" ] && source "$file"
+done
+

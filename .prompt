@@ -3,4 +3,5 @@ PS_DIR=%2~
 PS_RC=%(?.%F{green}.%F{red})
 PS_SYM=%#
 PS_RESET=%f
-export PS1="${PS_CDIR}${PS_DIR} ${PS_RC}${PS_SYM}${PS_RESET} "
+export PROMPT="${PS_CDIR}${PS_DIR} ${PS_RC}${PS_SYM}${PS_RESET} "
+
