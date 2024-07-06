@@ -3,12 +3,19 @@ for file in ~/.scripts/.[^.]*; do
 done
 unset file
 
-# Mac OS specific operation
+# OS specific operation
 if [[ "$(uname)" == "Darwin" ]]; then
   eval "$(/opt/homebrew/bin/brew shellenv)"
-  cp ~/.bin/fzf{-darwin-arm64,} && source <(~/.bin/fzf --zsh)
+  ( \
+    mv ~/.bin/fzf{-darwin-arm64,}; \
+    mv ~/.bin/fd{-darwin-arm64,} \
+  ) &> /dev/null
 else
-  cp ~/.bin/fzf{-linux-amd64,} && source <(~/.bin/fzf --zsh)
+  ( \
+    mv ~/.bin/fzf{-linux-amd64,}; \
+    mv ~/.bin/fd{-linux-amd64,} \
+  ) &> /dev/null
 fi
 
+source <(~/.bin/fzf --zsh)
 
