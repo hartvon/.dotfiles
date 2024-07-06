@@ -6,9 +6,9 @@ unset file
 # Mac OS specific operation
 if [[ "$(uname)" == "Darwin" ]]; then
   eval "$(/opt/homebrew/bin/brew shellenv)"
-  source <(~/.bin/fzf-darwin-arm64 --zsh)
+  cp ~/.bin/fzf{-darwin-arm64,} && source <(~/.bin/fzf --zsh)
 else
-  source <(~/.bin/fzf-linux-amd64 --zsh)
+  cp ~/.bin/fzf{-linux-amd64,} && source <(~/.bin/fzf --zsh)
 fi
 
 
