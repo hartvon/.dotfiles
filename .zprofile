@@ -18,4 +18,4 @@ else
 fi
 
 source <(~/.bin/fzf --zsh)
-
+source ~/.zshrc

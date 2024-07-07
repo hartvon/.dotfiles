@@ -29,6 +29,7 @@ alias gcotb='git checkout --track -b'
 alias glog='git log'
 alias glogp='git log --pretty=format:"%h %s" --graph'
 
-# -- vim
+# -- misc
+alias df='cd ~/.dotfiles'
 alias v='vim'
 
