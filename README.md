@@ -3,8 +3,9 @@
 ## Prerequisite
 
 - git
-- zsh
+- zsh(chsh)
 - rsync
+- autojump
 
 ## Installation
 
