@@ -3,6 +3,7 @@
 ## Prerequisite
 
 - git
+- zsh
 - rsync
 
 ## Installation
