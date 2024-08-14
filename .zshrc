@@ -6,8 +6,9 @@ bindkey '^[[1;5C' emacs-forward-word
 bindkey '^[^[[D' emacs-backward-word
 
 # Setup editor
-VISUAL=vim
-EDITOR=vim
+export VISUAL=vim
+export EDITOR=vim
+export PATH=$PATH:~/.bin:~/.scripts
 
 # Keep 1000 lines of history within the shell and save it to ~/.zsh_history:
 HISTSIZE=1000
