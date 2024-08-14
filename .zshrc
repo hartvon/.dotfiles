@@ -20,7 +20,7 @@ fpath=(~/.completions $fpath)
 autoload -Uz compinit
 compinit
 
-for file in ~/.{prompt,exports,aliases,extra}; do
+for file in ~/.{prompt,aliases,extra}; do
   [ -r "$file" ] && [ -f "$file" ] && source "$file"
 done
 
